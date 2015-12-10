@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>todo</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/vendor/modernizr.js     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+
+    <script src="scripts/main.js"></script>
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container-fluid">
+      <div class="todo text-center">
+        todos
+      </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 textBack shadow border1" id="enterTask">
+                <i class="fa fa-3x fa-angle-down col-xs-2 col-sm-2 text-center chevron chevronMargin" id="chevron"></i>
+                <input type="text" class="form1 col-xs-10 col-sm-10" placeholder="What needs to be done?" id="inputValue" required>
+            </div>
+          </div>
+        <div class="row" id="taskMaster">
+         <div class="col-xs-12 col-sm-6 col-sm-offset-3 textBack shadow border1">
+          <ul id="tasklist"></ul>
+            <!--<div class="circle">
+              <i class="fa fa-circle-thin col-xs-2 col-sm-2 text-center vertical1"></i>
+            </div>
+              <div class="form1 tasks col-xs-8 col-sm-8">Create the Website</div>
+              <i class="fa fa-times col-xs-2 col-sm-2 vertical1"></i>-->
+          </div>
+        </div>
+        <div class="row" id="buttonRow">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3 textBack shadow border2">
+            <div class="col-xs-12 col-sm-12 form2 stack">
+              <div class="col-xs-4 col-sm-3 vertical"><span id="totalItems">0</span><span id="itemPlurality"> items</span> left</div>
+              <div class="col-xs-1 col-sm-1 noPadMarg"><button class="btn btn-default target buttonPos" id="allButton">All</button></div>
+              <div class="col-xs-3 col-sm-2 noPadMarg"><button class="btn btn-default target buttonPos" id="activeButton">Active</button></div>
+              <div class="col-xs-2 col-sm-2 noPadMarg"><button class="btn btn-default target buttonPos" id="completedButton">Completed</button></div>
+              <div class="col-xs-2 col-sm-4 clearComplete buttonPos">Clear Completed</div>
+            </div>
+          </div>
+        </div>
+      <div class="smalltext text-center">
+        Double-click to edit a todo
+      </div>
+    </div>
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <!-- endbuild -->
+  </body>
+</html>

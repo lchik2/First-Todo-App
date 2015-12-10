@@ -1,0 +1,194 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+  background-color: #f5f5f5;
+}
+
+.todo {
+  color: rgba(175, 47, 47, 0.15);
+  font-size: 500%;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  font-size: 125%;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+  font-size: 125%;
+}
+
+.border1 {
+  border-top: 2px outset #f1f1f1;
+  border-right: 2px inset #f1f1f1;
+  border-bottom: 0px inset #f1f1f1;
+  border-left: 2px outset #f1f1f1;
+  border-radius: 3px;
+}
+
+.border2 {
+  border-top: 2px outset #f1f1f1;
+  border-right: 2px inset #f1f1f1;
+  border-left: 2px outset #f1f1f1;
+  border-radius: 3px;
+}
+
+.form1 {
+  border-style: none;
+  height: 60px;
+}
+
+.form2 {
+  border-style: none;
+  height: 40px;
+}
+
+.form3 {
+  height: 5px;
+}
+
+.shadow {
+  -mox-box-shadow: 0px 18px 30px 5px #dedede;
+  -webkit-box-shadow: 0px 18px 30px 5px #dedede;
+  box-shadow: 0px 18px 30px 5px #dedede;
+}
+
+.smalltext {
+  color: #777;
+  font-size: 70%;
+  margin-top: 45px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chevron {
+  color: #ddd;
+}
+
+.circle {
+  color: #eee;
+}
+
+.checkCircle {
+  color: #0f0;
+}
+
+.textBack {
+  background-color: white;
+  padding: 0px;
+}
+
+.circleMargin {
+  margin-top:11px;
+}
+
+.xMargin {
+  margin-top:10px;
+}
+
+.chevronMargin {
+  margin-top:10px;
+}
+
+.vertical {
+  margin-top:10px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.buttonPos {
+  margin-top:3px;
+  font-family: 'Roboto', sans-serif;
+  border-style: none;
+}
+
+.plainButton {
+  border-style: none;
+  background-color: white;
+  padding:0px;
+  margin:0px;
+}
+
+#active {
+  margin-left:10px;
+}
+
+.cancel {
+  font-size: 2em;
+  color: rgba(175, 47, 47, 0.5);
+}
+
+.tasks {
+  font-size: 1.5em;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.stack::before,
+.stack::after {
+  background-color: #fff;
+  box-sizing: border-box;
+  position: absolute;
+  content: '';
+  border: 1px solid #ddd;
+  height: 5px;
+}
+
+.stack::after {
+  width: 99%;
+  left: .5%;
+  bottom: -5px;
+}
+
+.stack::before {
+  width: 98%;
+  left: 1%;
+  bottom: -9px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.taskBox {
+  margin: 0px;
+  padding: 0px;
+}
+
+.target:active, .active {
+  border: 1px solid #b33;
+}
+
+.stroked {
+  text-decoration: line-through;
+}
+
+.darkChevron {
+  color: #000;
+}
+
+.clearComplete {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.clearComplete:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.noPadMarg {
+  padding: 0px;
+  margin: 0px;
+}
